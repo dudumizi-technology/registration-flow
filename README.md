@@ -1,6 +1,27 @@
 
-
 # API Documentation
+
+## Overview
+
+This API allows you to interact with our services. To access protected endpoints, you need to authenticate your requests using an API key.
+
+### Authentication
+
+To authenticate your requests, you must include an API key in the request headers. The API key is used to identify the client making the request and determine access permissions.
+
+### How to Pass API Key in the Header
+
+You need to include your API key in the `X-API-KEY` header for each request. Below is an example of how to do this.
+
+### Example Request with API Key
+
+#### cURL
+
+```bash
+curl -X GET "https://api.example.com/protected-endpoint" \
+-H "X-API-KEY: your-api-key-here" \
+-H "Content-Type: application/json"
+```
 
 ## 1. Check User
 

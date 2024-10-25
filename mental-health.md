@@ -154,3 +154,23 @@ All endpoints in this documentation require authentication. Make sure to include
   }
   ```
 - **Response:** Returns the updated activity status.
+
+
+### submit mood
+
+- **URL:** `/mental-health/submit-mood`
+- **Method:** `POST`
+- **Request Body:**
+  ```json
+  {
+      "description": "hello",
+      "mood_category": 1
+  }
+  ```
+
+### get all moods
+
+- **URL:** `/mental-health/get-all-moods`
+- **Method:** `GET`
+
+

@@ -30,9 +30,13 @@ All endpoints in this documentation require authentication. Make sure to include
 - **Request Body:**
   ```json
   {
-      "title": "Improve Sleep Quality",
-      "description": "Aim to get at least 7 hours of sleep each night.",
-      "targetDate": "2024-12-31"
+            "title": "required|string",
+            "mental_health_disease_id": "required|numeric",
+            "description": "required|string",
+            "assesment_id": "required|numeric",
+            "level": "required|numeric",
+            "start_date": "required|string",
+            "end_date": "required|string"
   }
   ```
 - **Response:** Returns the submitted goal details.
@@ -61,10 +65,16 @@ All endpoints in this documentation require authentication. Make sure to include
 - **Request Body:**
   ```json
   {
-      "goalId": 1,
-      "activity": "Meditation",
-      "duration": "30 minutes",
-      "date": "2024-10-30"
+            "title": "required|string",
+            "goal_id": "required|numeric",
+            "type": "required|numeric",
+            "start_date": "required|string",
+            "time": "required|string",
+            "duration": "required|string",
+            "length": "required|string",
+            "activityInterval": "required|string",
+            "category": "required|string",
+            "activityFrequency": "required|string"
   }
   ```
 - **Response:** Returns the submitted activity details.
@@ -101,11 +111,9 @@ All endpoints in this documentation require authentication. Make sure to include
 - **Description:** Mark an activity as completed with updated completion logic.
 - **Request Body:**
   ```json
-  {
-      "activityId": 1,
-      "completionStatus": true,
-      "dateCompleted": "2024-10-30"
-  }
+    {
+      "id": "int|required"
+    }
   ```
 - **Response:** Returns the updated activity status.
 

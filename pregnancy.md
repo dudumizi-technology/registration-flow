@@ -147,6 +147,7 @@ Updates the status of a service within a clinic.
         "service_id": 1,
         "pregnancy_id": 1,
         "clinic_id": 1,
+        "date_taken": "",
     }
     ```
 ---

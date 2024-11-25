@@ -145,10 +145,10 @@ Updates the status of a service within a clinic.
     ```json
     {
         "service_id": 1,
-        "status": "completed"
+        "pregnancy_id": 1,
+        "clinic_id": 1,
     }
     ```
-
 ---
 
 ### **12. Create Clinic Visit**

@@ -160,9 +160,10 @@ Creates a new clinic visit associated with a pregnancy.
 - **Body**:
     ```json
     {
-        "visit_date": "2024-04-01",
-        "doctor_name": "Dr. Smith",
-        "notes": "Routine checkup"
+            "visit_date": "required|string",
+            "visit_with_partner": "required|numeric",
+            "notes": "required|string",
+            "has_attend": "required|numeric",
     }
     ```
 
@@ -184,9 +185,11 @@ Updates details of a specific clinic visit.
 - **Body**:
     ```json
     {
-        "visit_date": "2024-04-15",
-        "doctor_name": "Dr. John Doe",
-        "notes": "Follow-up checkup"
+            "visit_date": "required|string",
+            "visit_with_partner": "required|numeric",
+            "notes": "required|string",
+            "has_attend": "required|numeric",
+            "services_choosen": [] // list of int
     }
     ```
 
